@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yizack Hadid Rabbani - Founder of JakPol</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#39475f",
+                        "surface-container-low": "#f5f3f5",
+                        "surface-dim": "#dbd9db",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "on-secondary-container": "#64655c",
+                        "on-tertiary-container": "#9f7d5b",
+                        "inverse-primary": "#b9c7e4",
+                        "tertiary-container": "#2b1701",
+                        "surface-variant": "#e4e2e4",
+                        "surface-tint": "#515f78",
+                        "secondary": "#5e5f56",
+                        "surface": "#fbf9fb",
+                        "elegant-cream": "#FDFCF0",
+                        "on-secondary-fixed": "#1b1c15",
+                        "inverse-on-surface": "#f2f0f2",
+                        "surface-container-high": "#eae7ea",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#000000",
+                        "primary-fixed": "#d6e3ff",
+                        "tertiary-fixed-dim": "#e7bf99",
+                        "border-glass": "rgba(10, 25, 47, 0.1)",
+                        "secondary-fixed": "#e4e3d7",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-primary-container": "#76849f",
+                        "on-tertiary-fixed-variant": "#5d4124",
+                        "inverse-surface": "#303032",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fbf9fb",
+                        "on-tertiary-fixed": "#2b1701",
+                        "primary-container": "#0d1c32",
+                        "on-surface-variant": "#44474d",
+                        "on-error": "#ffffff",
+                        "surface-container": "#efedef",
+                        "secondary-container": "#e4e3d7",
+                        "primary": "#000000",
+                        "tertiary-fixed": "#ffdcbd",
+                        "on-secondary-fixed-variant": "#46473f",
+                        "deep-navy": "#0A192F",
+                        "surface-container-highest": "#e4e2e4",
+                        "on-surface": "#1b1b1d",
+                        "outline-variant": "#c5c6cd",
+                        "outline": "#75777e",
+                        "background": "#fbf9fb",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#c7c7bc",
+                        "on-background": "#1b1b1d",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "muted-gold": "#C5A059"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "touchbar-height": "56px",
+                        "section-gap": "160px",
+                        "gutter": "32px",
+                        "container-max": "1200px",
+                        "touchbar-padding": "8px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["Hanken Grotesk"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "nav-link": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "headline-sm": ["Libre Caslon Text"]
+                    },
+                    fontSize: {
+                        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.15em", fontWeight: "700" }],
+                        "display-lg": ["84px", { lineHeight: "90px", letterSpacing: "-0.02em", fontWeight: "400" }],
+                        "headline-md": ["42px", { lineHeight: "48px", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+                        "body-lg": ["20px", { lineHeight: "32px", fontWeight: "400" }],
+                        "nav-link": ["14px", { lineHeight: "20px", fontWeight: "500" }],
+                        "display-lg-mobile": ["48px", { lineHeight: "52px", letterSpacing: "-0.01em", fontWeight: "400" }],
+                        "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "400" }]
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'ambient-bg': 'ambient 15s ease infinite',
+                        'char-reveal': 'charReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(14px) scale(0.985)', filter: 'blur(3px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0) scale(1)', filter: 'blur(0px)' },
+                        },
+                        charReveal: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)', filter: 'blur(3px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)', filter: 'blur(0px)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% 0' },
+                            '100%': { backgroundPosition: '200% 0' },
+                        },
+                        ambient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { 
+            background-color: theme('colors.elegant-cream'); 
+            color: theme('colors.deep-navy');
+            background: linear-gradient(-45deg, #FDFCF0, #f5f3f5, #efedef, #FDFCF0);
+            background-size: 400% 400%;
+            animation: ambient 15s ease infinite;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+                transform: none !important;
+            }
+        }
+
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .fill-icon { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(22px) scale(0.985);
+            filter: blur(2px);
+            transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                        filter 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: opacity, transform, filter;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            filter: blur(0px);
+        }
+
+        /* Capped, modern stagger for list-style reveals (max 0.3s total spread) */
+        .reveal-group > .reveal:nth-child(1) { transition-delay: 0ms; }
+        .reveal-group > .reveal:nth-child(2) { transition-delay: 100ms; }
+        .reveal-group > .reveal:nth-child(3) { transition-delay: 200ms; }
+        .reveal-group > .reveal:nth-child(4) { transition-delay: 300ms; }
+
+        .nav-link-hover {
+            position: relative;
+        }
+        .nav-link-hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transform-origin: bottom right;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .nav-link-hover:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 300ms; }
+
+        .char-reveal {
+            display: inline-block;
+            opacity: 0;
+            animation: charReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            will-change: opacity, transform, filter;
+        }
+        .char-word {
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .shimmer-text {
+            background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.2), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+
+        .expertise-card {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .expertise-card:hover {
+            transform: scale(1.02);
+            box-shadow: inset 0 0 20px rgba(197, 160, 89, 0.05);
+            border-color: rgba(197, 160, 89, 0.3);
+        }
+
+        .parallax-layer {
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen relative pb-32 selection:bg-deep-navy selection:text-elegant-cream overflow-x-hidden">
+<!-- Top Navigation (Desktop) -->
+<nav class="hidden md:flex justify-between items-center w-full px-8 py-6 max-w-container-max mx-auto absolute top-0 left-0 right-0 z-50">
+<div class="text-headline-sm font-headline-sm font-bold text-elegant-cream mix-blend-difference opacity-0 animate-fade-in-up">INOVATING POLITICS</div>
+<div class="flex gap-8 opacity-0 animate-fade-in-up delay-100">
+<a class="text-label-caps font-label-caps text-elegant-cream mix-blend-difference nav-link-hover hover:text-muted-gold transition-colors duration-300" href="#">Work</a>
+<a class="text-label-caps font-label-caps text-elegant-cream mix-blend-difference nav-link-hover hover:text-muted-gold transition-colors duration-300" href="#">About</a>
+<a class="text-label-caps font-label-caps text-elegant-cream mix-blend-difference nav-link-hover hover:text-muted-gold transition-colors duration-300" href="#">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full min-h-[90vh] bg-deep-navy flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0 parallax-layer" data-speed="0.05">
+<img alt="Jakarta Bundaran HI Sketch" class="w-full h-full object-cover opacity-60 mix-blend-luminosity grayscale scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLttPFyDp4Wbjew2Rw6FNWFNlc8GyYStu0x8ZnHZvOk9u2vwI56Y99NSgEqolQKVAUR3vG2ra8e1ayZNUAYVGYsx-kEQjFN7W6z0o0KryRG7tzhHgSEPw4zsD1SZK7T4TBlewdQ_WwEIoWOZUO6FPTg2vT5VkykvLp9xBY5Ulh3yQ1LLLoVaeMHw64gUYEjNO2sqGloiaFlWHQO9TGKYMI0fPK_zvvZFZOXGnWh1k2pMnywIzZNb3Fdwz4Q"/>
+</div>
+<div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-20">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-elegant-cream mb-6 tracking-tight" id="hero-name">Yizack Hadid Rabbani</h1>
+<p class="font-body-lg text-body-lg text-elegant-cream/80 max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-200">Digitalizing Politics. Empowering Governance.</p>
+<div class="flex items-center justify-center gap-8 mt-12 opacity-0 animate-fade-in-up delay-300">
+<a class="flex items-center gap-2 text-elegant-cream/80 hover:text-elegant-cream hover:scale-105 transition-all duration-300 group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-muted-gold transition-colors duration-300">person_add</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest group-hover:text-muted-gold transition-colors duration-300">Instagram</span>
+</a>
+<div class="w-px h-4 bg-elegant-cream/20"></div>
+<a class="flex items-center gap-2 text-elegant-cream/80 hover:text-elegant-cream hover:scale-105 transition-all duration-300 group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-muted-gold transition-colors duration-300">chat</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest group-hover:text-muted-gold transition-colors duration-300">WhatsApp</span>
+</a>
+<div class="w-px h-4 bg-elegant-cream/20"></div>
+<a class="flex items-center gap-2 text-elegant-cream/80 hover:text-elegant-cream hover:scale-105 transition-all duration-300 group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:text-muted-gold transition-colors duration-300">mail</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest group-hover:text-muted-gold transition-colors duration-300">Email</span>
+</a>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-6 md:px-8">
+<!-- The Mission -->
+<section class="py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 relative aspect-[3/4] md:aspect-auto md:h-[600px] overflow-hidden bg-surface-container-highest animate-float parallax-layer" data-speed="0.1">
+<img alt="Patung Tani Sketch" class="w-full h-full object-cover mix-blend-multiply grayscale hover:scale-105 transition-transform duration-700 opacity-65" src="https://lh3.googleusercontent.com/aida/AP1WRLs6DYG0KtVyJ0mSPOC-nMxlsf3Jg_LKaCtET04SRnkoD2ht14udCF_Qln05bIAa4BGCvpQ9Zuu-snoijF_cS9zUMUPHbzh7tJ7AM85grCdjRgUgzw43p-iM_6vCOPF54i4qJrF8r9JNsVve2QPrNhTo-uG8sdisijbQcOAEeMKXiZWSfaOWnDKTxLoAvEFF72VCC8Y5ZS7HHnNn-sk-nwG_yCv2t2J3Q5gNnRUaOJAXrrIF1tAP26iZtg"/>
+</div>
+<div class="md:col-span-1 md:block hidden"></div>
+<div class="md:col-span-6 space-y-8 mt-12 md:mt-0 reveal">
+<span class="font-label-caps text-label-caps text-deep-navy border-b border-deep-navy pb-2 inline-block">THE MISSION</span>
+<h2 class="font-headline-md text-headline-md text-deep-navy leading-tight">Advancing Good Governance Through Technology.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                    JakPol (Jakarta Politik) represents a paradigm shift in how political discourse and strategic governance are managed. By integrating advanced analytics with transparent operational models, we build systems that endure.
+                </p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-deep-navy hover:text-muted-gold transition-all duration-300 pt-4 group relative overflow-hidden" href="#">
+<span class="relative z-10">DISCOVER JAKPOL</span>
+<span class="material-symbols-outlined transform group-hover:translate-x-2 transition-transform duration-300 relative z-10">arrow_forward</span>
+<div class="absolute inset-0 shimmer-text pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</a>
+</div>
+</div>
+</section>
+<!-- Strategic Expertise -->
+<section class="py-section-gap border-t border-border-glass">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 reveal">
+<h2 class="font-headline-md text-headline-md text-deep-navy sticky top-32">Strategic<br/>Expertise.</h2>
+</div>
+<div class="md:col-span-8 mt-12 md:mt-0">
+<ul class="flex flex-col border-t border-border-glass reveal-group">
+<li class="py-10 border-b border-border-glass expertise-card px-6 -mx-6 reveal">
+<div class="flex items-start gap-8">
+<span class="font-label-caps text-label-caps text-deep-navy/40 w-8 pt-2 group-hover:text-muted-gold transition-colors duration-300">01</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-deep-navy mb-3 transition-all duration-300">Political Digitalization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl transition-colors duration-300">Architecting digital platforms that streamline campaign management, voter outreach, and real-time policy feedback loops.</p>
+</div>
+</div>
+</li>
+<li class="py-10 border-b border-border-glass expertise-card px-6 -mx-6 reveal">
+<div class="flex items-start gap-8">
+<span class="font-label-caps text-label-caps text-deep-navy/40 w-8 pt-2 group-hover:text-muted-gold transition-colors duration-300">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-deep-navy mb-3 transition-all duration-300">Governance Analytics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl transition-colors duration-300">Deploying data-driven models to assess policy impact, optimize resource allocation, and enhance transparent reporting.</p>
+</div>
+</div>
+</li>
+<li class="py-10 border-b border-border-glass expertise-card px-6 -mx-6 reveal">
+<div class="flex items-start gap-8">
+<span class="font-label-caps text-label-caps text-deep-navy/40 w-8 pt-2 group-hover:text-muted-gold transition-colors duration-300">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-deep-navy mb-3 transition-all duration-300">Strategic Communications</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl transition-colors duration-300">Crafting authoritative narratives and crisis response frameworks for high-stakes political environments.</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Founder's Note -->
+<section class="py-section-gap flex justify-center text-center reveal">
+<div class="max-w-3xl">
+<span class="material-symbols-outlined text-4xl text-deep-navy/20 mb-8 block hover:text-muted-gold transition-colors duration-300 animate-float">format_quote</span>
+<p class="font-headline-md text-headline-md text-deep-navy leading-relaxed mb-12">
+                "True political evolution isn't just about winning campaigns; it's about embedding resilience and clarity into the very fabric of governance."
+            </p>
+<div class="font-label-caps text-label-caps text-deep-navy">
+                YIZACK HADID RABBANI <span class="text-deep-navy/50 mx-2">|</span> FOUNDER, JAKPOL
+            </div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-8 py-section-gap border-t border-glass bg-transparent flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto text-deep-navy reveal">
+<div class="text-headline-sm font-headline-sm mb-4 md:mb-0 hover:text-muted-gold transition-colors duration-300 cursor-pointer">DIGITALIZE POLITICS</div>
+<div class="text-body-md font-body-md text-on-surface-variant mb-4 md:mb-0">MUDA BERDIKARI.</div>
+<div class="flex gap-6">
+<a class="text-label-caps font-label-caps text-on-surface-variant nav-link-hover hover:text-muted-gold transition-colors duration-300" href="#">Privacy</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant nav-link-hover hover:text-muted-gold transition-colors duration-300" href="#">Terms</a>
+</div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Modern character-by-character reveal for hero name (delay capped at 0.3s total)
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const heroName = document.getElementById('hero-name');
+        if (heroName && !reduceMotion) {
+            const text = heroName.textContent;
+            const words = text.split(' ');
+            const maxDelayMs = 300;
+            let globalIndex = 0;
+            const totalChars = text.replace(/\s/g, '').length;
+            const stepMs = totalChars > 1 ? Math.min(20, maxDelayMs / (totalChars - 1)) : 0;
+
+            heroName.innerHTML = '';
+            words.forEach((word, wi) => {
+                const wordSpan = document.createElement('span');
+                wordSpan.className = 'char-word';
+                [...word].forEach((char) => {
+                    const charSpan = document.createElement('span');
+                    charSpan.textContent = char;
+                    charSpan.className = 'char-reveal';
+                    const delay = Math.min(globalIndex * stepMs, maxDelayMs);
+                    charSpan.style.animationDelay = `${delay}ms`;
+                    wordSpan.appendChild(charSpan);
+                    globalIndex++;
+                });
+                heroName.appendChild(wordSpan);
+                if (wi < words.length - 1) {
+                    heroName.appendChild(document.createTextNode('\u00A0'));
+                }
+            });
+        } else if (heroName) {
+            heroName.style.opacity = '1';
+        }
+
+        // Entrance Animations Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((element) => {
+            observer.observe(element);
+        });
+
+        // Parallax Effect
+        window.addEventListener('scroll', () => {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            
+            const scrolled = window.pageYOffset;
+            const parallaxLayers = document.querySelectorAll('.parallax-layer');
+            
+            parallaxLayers.forEach(layer => {
+                const speed = layer.getAttribute('data-speed') || 0.1;
+                const yPos = -(scrolled * speed);
+                layer.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+
+        // Performance optimization for parallax
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    });
+</script>
+</body></html>
